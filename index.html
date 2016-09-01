@@ -1,44 +1,22 @@
 <!DOCTYPE html>
-<html class="no-js">
-<head>
+<html ng-app="angularjs-starter">
 
-  <!-- Meta-Information -->
-  <title>Adrian Dabat</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Vendor: Bootstrap via MaxCDN-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
-  <!-- CSS Styles -->
-  <link rel="stylesheet" href="css/main.css">
-  <!-- App JS-->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-
-  <script>
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>SPA Test</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
       document.write('<base href="' + document.location + '" />');
     </script>
-  <script src="js/main.js"></script>
+    <script src="app.js"></script>
+  </head>
 
-</head>
   <body ng-controller="MainCtrl">
-
-  <!-- Angular logic -->
-  <a href="#test?scrollTo=foo">Test / Foo</a>
+    <a href="#test?scrollTo=foo">Test / Foo</a>
     <a href="#weee?scrollTo=bar">Weee / Bar</a>
     <div ng-view></div>
     {{scrollTo}}
+  </body>
 
-  <!-- Vendor: Javascripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  <!-- Vendor: AngularJS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
-
-
-
-</body>
 </html>
