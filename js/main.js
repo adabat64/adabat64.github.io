@@ -6,7 +6,7 @@
 /**
  * Main AngularJS Web Application
  */
-var app = angular.module('app', [
+var app = angular.module('myapp', [
   'ngRoute'
 ]);
 
