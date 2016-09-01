@@ -18,9 +18,9 @@ app.config(['$routeProvider', function ($routeProvider) {
     // Home
     .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
     // Pages
-    .when("/about", {templateUrl: "#about", controller: "PageCtrl"})
-    .when("/portfolio", {templateUrl: "#portfolio", controller: "PageCtrl"})
-    .when("/contact", {templateUrl: "#contact", controller: "PageCtrl"})
+    .when("/about", {templateUrl: "partials/#about", controller: "PageCtrl"})
+    .when("/portfolio", {templateUrl: "#partials/#portfolio", controller: "PageCtrl"})
+    .when("/contact", {templateUrl: "partials/#contact", controller: "PageCtrl"})
     // else 404
     .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
 }]);
