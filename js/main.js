@@ -1,37 +1,31 @@
-/**
- * AngularJS Tutorial 1
- * @author Nick Kaye <nick.c.kaye@gmail.com>
- */
 
-/**
- * Main AngularJS Web Application
- */
-var app = angular.module('myapp', [
-  'ngRoute'
-]);
+var app = angular.module('angularjs-starter', []);
 
-/**
- * Configure the Routes
- */
-app.config(['$routeProvider', function ($routeProvider) {
-  $routeProvider
-    // Home
-    .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
-    // Pages
-    .when("/about", {templateUrl: "partials/#about", controller: "PageCtrl"})
-    .when("/portfolio", {templateUrl: "#partials/#portfolio", controller: "PageCtrl"})
-    .when("/contact", {templateUrl: "partials/#contact", controller: "PageCtrl"})
-    // else 404
-    .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
-}]);
-/**
- * Controls all other Pages
- */
-app.controller('PageCtrl', function (/* $scope, $location, $http */) {
-  console.log("Page Controller reporting for duty.");
+ app.config(function($routeProvider) {
+   $routeProvider.when('/test', {
+     controller: 'TestCtrl',
+     templateUrl: 'home.html'
+   })
+   .when('/weee', {
+     controller: 'WeeeCtrl',
+     templateUrl: 'home.html'
+   });
+ });
 
-  // Activates Tooltips for Social Links
-  $('.tooltip-social').tooltip({
-    selector: "a[data-toggle=tooltip]"
-  })
-});
+ app.run(function($rootScope, $location, $anchorScroll, $routeParams) {
+   $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
+     $location.hash($routeParams.scrollTo);
+     $anchorScroll();
+   });
+ })
+
+ app.controller('MainCtrl', function($scope, $location, $anchorScroll, $routeParams) {
+ });
+
+
+ app.controller('TestCtrl', function($scope) {
+ });
+
+
+ app.controller('WeeeCtrl', function($scope) {
+ });
