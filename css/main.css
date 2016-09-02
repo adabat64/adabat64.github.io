@@ -1,0 +1,10 @@
+.header-content-inner{
+  text-align: center;
+}
+
+.device-mockup.iphone6_plus.portrait>.device>.screen, .device-mockup.iphone6_plus>.device>.screen {
+    top: 13.20%;
+    bottom: 7.58%;
+    left: 6.30%;
+    right: 5.97%;
+}
