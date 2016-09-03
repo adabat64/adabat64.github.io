@@ -1,3 +1,5 @@
+
+/*Header Section */
 .header-content-inner{
   text-align: center;
 }
@@ -7,4 +9,32 @@
     bottom: 7.58%;
     left: 6.30%;
     right: 5.97%;
+}
+
+
+/*CV Section */
+section.download {
+    padding: 35px 0;
+    position: relative;
+    background: white;
+    border-bottom-width: 7px;
+    border-bottom-style: solid;;
+    border-bottom-color: #005C97;
+    border-bottom-color: -webkit-linear-gradient(to left, #005C97 , #363795); /* Chrome 10-25, Safari 5.1-6 */
+    border-bottom-color: linear-gradient(to left, #005C97 , #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+section.download h2{
+  color: #ab3363;
+}
+
+#btn-cv{
+  color:#ab3363;
+}
+.btn-cv:hover,
+.btn-cv:focus,
+.btn-cv:active,
+.btn-cv.active{
+  color: #ffffff!important;
+  background-color: #ab3363;
 }
