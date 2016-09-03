@@ -30,6 +30,8 @@ section.download h2{
 
 #btn-cv{
   color:#ab3363;
+  border-color: #ab3363;
+  border: 1px solid;
 }
 .btn-cv:hover,
 .btn-cv:focus,
