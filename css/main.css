@@ -46,3 +46,14 @@ section.download h2{
   border-width: 5px;
   border-color: white;
 }
+#p1{
+  margin-top: 20%;
+  text-decoration: underline;
+}
+#AoI-data {
+  animation-duration: 2s;
+}
+#AoI-bio {
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
