@@ -17,6 +17,10 @@
 
 
 /*CV Section */
+.wrapper{
+  text-align: left;
+}
+
 section.download {
     padding: 35px 0;
     position: relative;
@@ -30,6 +34,11 @@ section.download {
 
 section.download h2{
   color: #ab3363;
+}
+
+#download-pheader{
+  font-size: 15px;
+  color: rgba(171, 51, 99, 0.79);
 }
 
 #btn-cv{
@@ -60,4 +69,8 @@ section.download h2{
 #AoI-bio {
   animation-duration: 2s;
   animation-delay: 1s;
+}
+#AoI-cs{
+  animation-duration: 2s;
+  animation-delay: 2s;
 }
