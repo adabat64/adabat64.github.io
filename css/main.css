@@ -2,25 +2,35 @@
 #navbar-inprogress{
   padding-left:55px;
 }
-
+.device-mockup.iphone6_plus, .device-mockup.iphone6_plus.portrait{
+  padding-bottom: 0;
+}
 /*Header Section */
 .header-content-inner{
   text-align: center;
 }
-
-.device-mockup.iphone6_plus.portrait>.device>.screen, .device-mockup.iphone6_plus>.device>.screen {
-    top: 13.20%;
-    bottom: 7.58%;
-    left: 6.30%;
-    right: 5.97%;
+#AoI-data {
+  animation-duration: 2s;
 }
-
+#AoI-bio {
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+#AoI-cs{
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
 
 /*CV Section */
 .wrapper{
   text-align: left;
 }
-
+.skill-bar-percent{
+  display: none;
+}
+.skillbar-extra{
+  margin-left: 25%;
+}
 section.download {
     padding: 35px 0;
     position: relative;
@@ -35,10 +45,22 @@ section.download {
 section.download h2{
   color: #ab3363;
 }
-
-#download-pheader{
+#wrapper-top{
+  margin-bottom: 0;
+}
+#wrapper-bottom{
+  margin-top: 0;
+}
+#cv-pheader{
   font-size: 15px;
   color: rgba(171, 51, 99, 0.79);
+}
+#skillbar-pTitles{
+  color: #ab3363;
+  text-decoration: underline;
+}
+#skillbar-p{
+  color: #ab3363;
 }
 
 #btn-cv{
@@ -62,15 +84,4 @@ section.download h2{
 #p1{
   margin-top: 20%;
   text-decoration: underline;
-}
-#AoI-data {
-  animation-duration: 2s;
-}
-#AoI-bio {
-  animation-duration: 2s;
-  animation-delay: 1s;
-}
-#AoI-cs{
-  animation-duration: 2s;
-  animation-delay: 2s;
 }
