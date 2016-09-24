@@ -237,71 +237,59 @@
         </div>
     </section>
 
-    <!-- Portfolio Section
+    <!-- Portfolio Section -->
     <section id="projects" class="features">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
-                        <h2>Unlimited Features, Unlimited Fun</h2>
-                        <p class="text-muted">Check out what you can do with this app theme!</p>
+                        <h2>Things I created.</h2>
                         <hr>
                     </div>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-md-4">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen"> -->
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                              <!--      <img src="img/demo-screen-1.jpg" class="img-responsive" alt=""> </div>
-                                <div class="button">
-                                -->    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                            <!--    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-screen-smartphone text-primary"></i>
-                                    <h3>Device Mockups</h3>
-                                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-camera text-primary"></i>
-                                    <h3>Flexible Use</h3>
-                                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-present text-primary"></i>
-                                    <h3>Free to Use</h3>
-                                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-lock-open text-primary"></i>
-                                    <h3>Open Source</h3>
-                                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div id="skillbar-pTitles">
+                  <p>Github Collection.</p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="github-widget" data-repo="adabat64/Portfolio"></div>
+                <p>
+                  My portfolio is hosted on github. Most of these projects were completed
+                  through the <a href="https://wwww.learncodinganywhere.com/">Tech Academy Bootcamp</a> in Portland OR.
+                  I created a variety of small applications in Python and C# that can be downloaded and ran through the command line.
+                  More information can be read from the readmes.
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="github-widget" data-repo="adabat64/adabat64.github.io"></div>
+                <p>
+                  This repository contains the code for this website.
+                  This single page application is built using a Bootstrap CSS theme connected to a few javascript components.
+                </p>
+              </div>
             </div>
-    </section> -->
+
+            <div class="row" id="row-latest">
+              <div id="skillbar-pTitles">
+                  <p>Latest Completed Project: <a href="http://margulis.com">Margulis.com</a></p>
+              </div>
+              <div>
+                <iframe id="marg-iframe" src="http://www.margulis.com/"></iframe>
+                <p>
+                  Margulis Jewelers is a small, independent jeweler located at the heart of downtown Portland, OR.
+                  They have been in business since 1932 and boast creative excellence and professionalism.
+                  In mid August 2016, I released the first version of their website I was asked to recreate.<br>
+                  The website is fully responsive, resize your browser window to see! For a better experience, visit <a href="http://margulis.com">www.margulis.com</a> directly.
+                </p>
+              </div>
+            </div>
+
+
+          <div class="row">
+          </div>
+    </section>
 
     <!-- Contact Section -->
 <!--    <section id="contact" class="contact bg-primary">
@@ -342,7 +330,8 @@
   <!-- __ SCRIPTS__ -->
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!--  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> -->
+    <script src="http://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
 
     <!-- Skillbar JS-->
     <script src="js/skill.bars.jquery.js"></script>
@@ -368,6 +357,8 @@
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
 
+    <!-- Gihub Repo Widget script -->
+    <script type="text/javascript" src="js/jquery.githubRepoWidget.min.js"></script>
 </body>
 
 </html>
