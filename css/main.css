@@ -103,3 +103,17 @@ section.features h2{
   margin-top:15px;
   margin-bottom: 10px;
 }
+#contact{
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    overflow-y: hidden;
+    background: url(../img/bg-pattern.png),#7b4397;
+    background: url(../img/bg-pattern.png),-webkit-linear-gradient(to left,#7b4397,#dc2430);
+    background: url(../img/bg-pattern.png),linear-gradient(to left,#7b4397,#dc2430);
+    color: #fff;
+    text-align: center;
+}
+#contact-p{
+  font-size: 1.5em;
+}
