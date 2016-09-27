@@ -29,13 +29,14 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/skillbar.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
 <body id="page-top">
@@ -271,18 +272,29 @@
               </div>
             </div>
 
-            <div class="row" id="row-latest">
-              <div id="skillbar-pTitles">
-                  <p>Latest Completed Project: <a href="http://margulis.com">Margulis.com</a></p>
-              </div>
-              <div>
-                <iframe id="marg-iframe" src="http://www.margulis.com/"></iframe>
-                <p>
-                  Margulis Jewelers is a small, independent jeweler located at the heart of downtown Portland, OR.
-                  They have been in business since 1932 and boast creative excellence and professionalism.
-                  In mid August 2016, I released the first version of their website I was asked to recreate.<br>
-                  The website is fully responsive, resize your browser window to see! For a better experience, visit <a href="http://margulis.com">www.margulis.com</a> directly.
-                </p>
+              <div class="row" id="row-latest">
+                <div id="iframes-title">
+                    <p>Latest Completed Project: <a href="http://margulis.com"> Margulis.com</a></p>
+                </div>
+                <div id="iframe-p">
+                  <p>
+                    Margulis Jewelers is a small, independent jeweler located at the heart of downtown Portland, OR.
+                    They have been in business since 1932 and boast creative excellence and professionalism.
+                    In mid August 2016, I released the first version of their website I was asked to recreate.
+                  </p>
+                  <p>
+                    These two frames are live versions of margulis.com before and after I was asked to recreate it.
+                    The new website is fully responsive, resize your browser window to see! For a better experience, visit <a href="http://margulis.com">www.margulis.com</a> directly.
+                  </p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <img src="img/oldmarg-screenshot.png" class="img-thumbnail center-block" width="304" height="236" data-featherlight="#fl3"></img>
+                    <iframe class="lightbox" id="fl3" src="https://adabat64.github.io/oldmargulis/"></iframe>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                  <img id="fl2" src="img/newmarg-screenshot.png" class="img-thumbnail center-block" width="304" height="236" data-featherlight="#fl2"></img>
+                  <iframe class="lightbox" id="fl2" src="http://www.margulis.com/"></iframe>
+                </div>
               </div>
             </div>
     </section>
@@ -358,6 +370,9 @@
 
     <!-- Gihub Repo Widget script -->
     <script type="text/javascript" src="js/jquery.githubRepoWidget.min.js"></script>
+
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
 </body>
 
 </html>
