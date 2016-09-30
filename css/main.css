@@ -1,18 +1,23 @@
+/*Make the iFrames disapear */
 @media all {
   .lightbox { display: none; }
 }
 
+/*Give all the sections a padding*/
 section{
   padding-top: 30px;
 }
 
+  /* NAVBAR STUFF*/
 #navbar-inprogress{
   padding-left:55px;
 }
 .device-mockup.iphone6_plus, .device-mockup.iphone6_plus.portrait{
   padding-bottom: 0;
 }
-/*Header Section */
+
+
+  /*HEADER SECTION STUFF */
 .header-content-inner{
   text-align: center;
 }
@@ -28,7 +33,7 @@ section{
   animation-delay: 2s;
 }
 
-/*CV Section */
+  /*CV SECTION STUFF */
 .wrapper{
   text-align: left;
 }
@@ -92,6 +97,8 @@ section.download h2{
   margin-top: 20%;
   text-decoration: underline;
 }
+
+  /*PROJECTS SECTION STUFF*/
 section.features, .section-heading{
   margin-bottom: 20px!important;
 }
@@ -105,20 +112,7 @@ section.features h2{
   margin-top:5%;
   margin-bottom: 10px;
 }
-#contact{
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    overflow-y: hidden;
-    background: url(../img/bg-pattern.png),#7b4397;
-    background: url(../img/bg-pattern.png),-webkit-linear-gradient(to left,#7b4397,#dc2430);
-    background: url(../img/bg-pattern.png),linear-gradient(to left,#7b4397,#dc2430);
-    color: #fff;
-    text-align: center;
-}
-#contact-p{
-  font-size: 1.5em;
-}
+
 #iframes-title{
 color: #ab3363;
 text-decoration: underline;
@@ -163,4 +157,20 @@ text-decoration: underline;
     width:1200px;
     height:800px;
   }
+}
+
+  /*CONTACT SECTION STUFF*/
+#contact{
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    overflow-y: hidden;
+    background: url(../img/bg-pattern.png),#7b4397;
+    background: url(../img/bg-pattern.png),-webkit-linear-gradient(to left,#7b4397,#dc2430);
+    background: url(../img/bg-pattern.png),linear-gradient(to left,#7b4397,#dc2430);
+    color: #fff;
+    text-align: center;
+}
+#contact-p{
+  font-size: 1.5em;
 }
